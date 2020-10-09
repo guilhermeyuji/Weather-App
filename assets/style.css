@@ -1,0 +1,52 @@
+*{font-family:"Roboto",sans-serif;box-sizing: border-box;}
+h1{text-align:center;margin:4rem 3rem}
+body{margin:0;background-color:#f5f5f5}
+form{width:100%;max-width:30rem;margin:auto;text-align:center;}
+.input-field,.form-submit{display: inline-block;height: 4rem;vertical-align: top;}
+.input-field input{width:100%;display:block;height:100%;border: .05rem solid #eaeaea;padding:1rem;outline:none;}
+.input-field{width:calc(100% - 3.3rem)}
+.form-submit{width:3rem}
+.form-submit button{width:100%;height:100%;border:.05rem solid #eaeaea;font-size: 1.4rem;color: gray;cursor: pointer;transition: .2s;outline: none;}
+.form-submit button:hover{box-shadow:1px 1px 10px -4px #c3c3c3a8}
+.search_area {padding: 2rem;}
+.city_name {font-size: 2rem;}
+.temperature {font-size: 5rem;}
+
+
+
+
+@keyframes loading {
+    0% {
+       width: 1.5rem;
+       height: 1.5rem;
+    }
+    50% {
+       width: 1rem;
+       height: 1rem;
+       opacity: .2
+    }
+}
+
+.result_area{max-width:28rem;margin:auto;width:95%;position: relative;}
+.result_area.searching{border-radius:.5rem;border:.05rem solid #e7e7e7;background-color:white;padding: 3rem;}
+.result_area.searching:before{content: "";display:block;width: 1.5rem;height: 1.5rem;margin: auto;border: .3rem solid rgb(255 165 0);border-radius: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;animation: loading .7s infinite;}
+.flexbox{display:flex;align-items:center}
+.weather-icon{width:6rem;height:6rem;background-size:contain;background-repeat:no-repeat;background-position:50%}
+.result_area.ready .result{border-radius:.5rem;padding:3rem;color:#fff}
+.result_area.ready .result[d="day"]{border:.05rem solid #32c8db;background-color:#32c8db}
+.result_area.ready .result[d="night"]{border:.05rem solid #1f1f1f;background-color:#1f1f1f}
+.city_name span {
+    font-size: .65rem;
+    vertical-align: top;
+    margin-left: .5rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+
+
+footer{text-align:center;font-size:.9rem;margin-top: 8rem;padding: 2rem;}
+footer a{text-decoration:none;color:#000;font-weight:600}
