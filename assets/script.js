@@ -1,4 +1,4 @@
-const apiKey = ''; // AccuWeather Api Key
+const apiKey = 'gWilhfNOcpaZ49C7KDDH58Hd8gy1NobN'; // AccuWeather Api Key
 
 
 var form = document.querySelector('form');
