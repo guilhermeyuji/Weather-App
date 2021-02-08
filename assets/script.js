@@ -67,7 +67,7 @@ form.addEventListener('submit', function(e){
                                 resultBox.classList.remove('searching');
                             }
                         };
-                        requestForecastData.open('GET', 'http://dataservice.accuweather.com/forecasts/v1/hourly/1hour/'+cityData[0]['Key']+'?apikey='+apiKey+'&details=true');
+                        requestForecastData.open('GET', 'https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/'+cityData[0]['Key']+'?apikey='+apiKey+'&details=true');
                         requestForecastData.send();
 
                     }
@@ -79,7 +79,7 @@ form.addEventListener('submit', function(e){
                 }
             }
         };
-        requestCityData.open('GET', 'http://dataservice.accuweather.com/locations/v1/cities/search?apikey='+apiKey+'&q='+search);
+        requestCityData.open('GET', 'https://dataservice.accuweather.com/locations/v1/cities/search?apikey='+apiKey+'&q='+search);
         requestCityData.send();
     }
 
